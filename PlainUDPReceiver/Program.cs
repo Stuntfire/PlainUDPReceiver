@@ -10,6 +10,8 @@ namespace PlainUDPReceiver
     {
         static void Main(string[] args)
         {
+            UDPReceiver udp = new UDPReceiver();
+            udp.Start();
         }
     }
 }
