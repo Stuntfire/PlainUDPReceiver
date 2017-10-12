@@ -10,12 +10,6 @@ namespace PlainUDPReceiver
 {
     public class UDPReceiver
     {
-        public UDPReceiver()
-        {
-            
-        }
-
-
         private int Port = 11001;
 
         public void Start()
@@ -24,12 +18,18 @@ namespace PlainUDPReceiver
 
             IPEndPoint sendersEndPoint = new IPEndPoint(IPAddress.Any, Port);
 
-            byte[] recievedBytes = receiverClient.Receive(ref sendersEndPoint);
+            try
+            {
+                byte[] recievedBytes = receiverClient.Receive(ref sendersEndPoint);
 
-            Console.WriteLine($"Afsenders adr : {sendersEndPoint.Address} og port : {sendersEndPoint.Port}");
+                String recievedString = Encoding.ASCII.GetString(recievedBytes);
 
-            String recievedString = Encoding.ASCII.GetString(recievedBytes);
-            Console.WriteLine(recievedString);
+                Console.WriteLine($"Modtog: \n{recievedString} fra afsenders adr: \n{sendersEndPoint.Address} og port: \n{sendersEndPoint.Port}");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
     }
 }

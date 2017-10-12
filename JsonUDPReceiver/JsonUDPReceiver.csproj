@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{832BA01C-DE91-459C-9860-D140CDF6B855}</ProjectGuid>
+    <ProjectGuid>{9F450DDE-3155-4B45-92D9-26C7B7145B93}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PlainUDPReceiver</RootNamespace>
-    <AssemblyName>PlainUDPReceiver</AssemblyName>
+    <RootNamespace>JsonUDPReceiver</RootNamespace>
+    <AssemblyName>JsonUDPReceiver</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ModelLib">
+      <HintPath>..\..\ModelLib\ModelLib\bin\Debug\ModelLib.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -45,9 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JsonReceiver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UDPReceiver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

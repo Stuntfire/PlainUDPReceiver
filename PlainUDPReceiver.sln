@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlainUDPReceiver", "PlainUDPReceiver\PlainUDPReceiver.csproj", "{832BA01C-DE91-459C-9860-D140CDF6B855}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlUDPReceiver", "XmlUDPReceiver\XmlUDPReceiver.csproj", "{E5B7F8B9-D599-467B-AC70-FF61E50AF4C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonUDPReceiver", "JsonUDPReceiver\JsonUDPReceiver.csproj", "{9F450DDE-3155-4B45-92D9-26C7B7145B93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{832BA01C-DE91-459C-9860-D140CDF6B855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{832BA01C-DE91-459C-9860-D140CDF6B855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{832BA01C-DE91-459C-9860-D140CDF6B855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B7F8B9-D599-467B-AC70-FF61E50AF4C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B7F8B9-D599-467B-AC70-FF61E50AF4C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B7F8B9-D599-467B-AC70-FF61E50AF4C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B7F8B9-D599-467B-AC70-FF61E50AF4C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F450DDE-3155-4B45-92D9-26C7B7145B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F450DDE-3155-4B45-92D9-26C7B7145B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F450DDE-3155-4B45-92D9-26C7B7145B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F450DDE-3155-4B45-92D9-26C7B7145B93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
